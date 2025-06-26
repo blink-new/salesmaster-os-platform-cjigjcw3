@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import { 
   Target,
   Brain,
-  Microphone,
-  MicrophoneOff,
+  Mic,
+  MicOff,
   Play,
   Square,
   RotateCcw,
@@ -434,7 +434,7 @@ const AIRoleplay = () => {
                         onClick={() => setIsRecording(!isRecording)}
                         className={isRecording ? 'bg-red-100 text-red-600' : ''}
                       >
-                        {isRecording ? <MicrophoneOff className="w-4 h-4" /> : <Microphone className="w-4 h-4" />}
+                        {isRecording ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
                       </Button>
                       <Button variant="outline" size="sm">
                         <Volume2 className="w-4 h-4" />
